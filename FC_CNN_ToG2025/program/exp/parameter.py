@@ -1,0 +1,158 @@
+#deep_double
+training_mod = {
+    "start_method": 's-jump',
+    # "start_method": 'nojump',
+    "restart": True,
+    "less_start": False,
+    # "play_method": "renew_children",
+    "play_method": "deep_play",
+    # "log_name": "RC_shuffle_renew_best_simple_move_test",
+    # "log_name": "RC_renew_best_simple_move",
+    "log_name": "2ply_double",
+    # "log_name": "RC_double",
+    "slow_transfer": False,
+    "depth": 1,
+    "cut_size": 1024,
+    "batch_size": 1024,
+    # "cut_size": 16384,
+    # "batch_size": 16384,
+    # "batch_size": 131072,
+    "shuffle": False,
+    # "batch_size" : 1048576,
+    "load_weight": True,
+    "weight_number": 2000,
+    "return_node": True,
+    "separate_mod": False,
+    "actual_value": False,
+    "testing_log": False,
+    "learning_rate": 0.001,
+    # "learning_rate": 0.0001,
+    # "learning_rate": 0.00001,
+    "greedy_move": False,
+    "simple_value": False,
+    "best_only": False,
+
+    "freeze": False,
+    "D3play_D1learn": False,
+    "proportion_evaluation": False,
+    "proportion_standardization": False,
+
+    "random_state": False,
+    "discount_factor": 1,
+    "Double_learning": False,
+    "Original_double_learning": False,
+    "flip_number": [0,1],
+    # "flip_number": None,
+    #flip_number = "Rotate counterclockwise + symmetrical about the y-axis."
+    "keep_B": False,
+    # renew model_B or keep it
+    "act_1": "deep",
+    # act_1 is only "deep" or "simple"
+    "act_2": "simple",
+    # act_2 is only "no" or "simple"
+    "triple_learning": False,
+    "renew_all": False,
+    # renew_all is to judge renew both A and B together
+    "half_double_learning": False,
+    "half_move": False,
+    # half_move: static_value, dynamic_move.
+    "same_state": False,
+    "RC_end_AFstate": False,
+    "step_learning": False,
+    "step": 5000,
+    "double_opposite": False,
+    "double_mode": False,
+    "another_learning": False,
+    "different_weight": False,
+    "only_different": False,
+    "full_formula": False,
+    "double_gpu": False,
+    "alpha": 1,
+    "gamma": 1,
+    # only renew different node
+
+    # now,another learning is only okay for D3
+    # "another_name": "random",
+    "another_name": "D1",
+    "another_possibility": 1,
+
+}
+#RC
+training_mod = {
+    "start_method": 's-jump',
+    # "start_method": 'nojump',
+    "restart": True,
+    "less_start": False,
+    "play_method": "renew_children",
+    # "play_method": "deep_play",
+    # "log_name": "RC_shuffle_renew_best_simple_move_test",
+    # "log_name": "RC_renew_best_simple_move",
+    # "log_name": "2ply_double",
+    "log_name": "RC_double",
+    "slow_transfer": False,
+    "depth": 1,
+    "cut_size": 1024,
+    "batch_size": 1024,
+    # "cut_size": 16384,
+    # "batch_size": 16384,
+    # "batch_size": 131072,
+    "shuffle": False,
+    # "batch_size" : 1048576,
+    "load_weight": True,
+    "weight_number": 2000,
+    "return_node": True,
+    "separate_mod": False,
+    "actual_value": False,
+    "testing_log": False,
+    "learning_rate": 0.001,
+    # "learning_rate": 0.0001,
+    # "learning_rate": 0.00001,
+    "greedy_move": False,
+    "simple_value": False,
+    "best_only": False,
+
+    "freeze": False,
+    "D3play_D1learn": False,
+    "proportion_evaluation": False,
+    "proportion_standardization": False,
+
+    "random_state": False,
+    "discount_factor": 1,
+    "Double_learning": False,
+    "Original_double_learning": False,
+    "flip_number": [0,1],
+    # "flip_number": None,
+    #flip_number = "Rotate counterclockwise + symmetrical about the y-axis."
+    "keep_B": False,
+    # renew model_B or keep it
+    "act_1": "deep",
+    # act_1 is only "deep" or "simple"
+    "act_2": "simple",
+    # act_2 is only "no" or "simple"
+    "triple_learning": False,
+    "renew_all": True,
+    # renew_all is to judge renew both A and B together
+    "half_double_learning": False,
+    "half_move": False,
+    # half_move: static_value, dynamic_move.
+    "same_state": False,
+    "RC_end_AFstate": False,
+    "step_learning": False,
+    "step": 5000,
+    "double_opposite": False,
+    "double_mode": False,
+    "another_learning": False,
+    "different_weight": False,
+    "only_different": False,
+    "full_formula": False,
+    "double_gpu": False,
+    "alpha": 1,
+    "gamma": 1,
+    # only renew different node
+
+    # now,another learning is only okay for D3
+    # "another_name": "random",
+    "another_name": "D1",
+    "another_possibility": 1,
+
+}
